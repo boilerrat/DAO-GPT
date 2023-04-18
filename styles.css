@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #222;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
@@ -38,13 +38,13 @@ nav ul {
 }
 
 nav a {
-    color: #0af;
+    color: var(--accent-color);
     text-decoration: none;
     margin-left: 1rem;
 }
 
 nav a:hover {
-    color: #8ff;
+    color: var(--hover-color);
 }
 
 .hero {
@@ -73,6 +73,18 @@ nav a:hover {
     transition: all 0.2s ease;
     font-size: 1.25rem;
     font-family: 'Orbitron', sans-serif;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .cta-button:hover {
@@ -179,4 +191,39 @@ nav a.github-link:hover {
 
 nav a.github-link i {
     margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header, .footer-content {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #fff;
+    --text-color: #222;
+    --accent-color: #0af;
+    --hover-color: #8ff;
+}
+
+.dark-mode {
+    --background-color: #222;
+    --text-color: #fff;
+    --accent-color: #0af;
+    --hover-color: #8ff;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
