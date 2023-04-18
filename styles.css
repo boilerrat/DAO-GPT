@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: #222;
+    color: #fff;
 }
 
 header {
@@ -38,14 +38,15 @@ nav ul {
 }
 
 nav a {
-    color: var(--accent-color);
+    color: #0af;
     text-decoration: none;
     margin-left: 1rem;
 }
 
 nav a:hover {
-    color: var(--hover-color);
+    color: #8ff;
 }
+
 
 .hero {
     height: 100vh;
