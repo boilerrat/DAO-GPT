@@ -208,23 +208,3 @@ nav a.github-link i {
 html {
     scroll-behavior: smooth;
 }
-
-:root {
-    --background-color: #fff;
-    --text-color: #222;
-    --accent-color: #0af;
-    --hover-color: #8ff;
-}
-
-.dark-mode {
-    --background-color: #222;
-    --text-color: #fff;
-    --accent-color: #0af;
-    --hover-color: #8ff;
-}
-
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
