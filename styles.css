@@ -208,3 +208,17 @@ nav a.github-link i {
 html {
     scroll-behavior: smooth;
 }
+.rules-content ul {
+  text-align: center;
+}
+
+.rules-content ul li {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.rules-content ul li i {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
